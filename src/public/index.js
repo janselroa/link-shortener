@@ -17,7 +17,7 @@ form.addEventListener("submit",(e)=>{
         const div = document.createElement("div")
         div.classList.add("message")
         if(data.status==200){
-            div.innerHTML=`<p>${data.message}:<a href="http://localhost:8000/${data.newLink}">${data.newLink}</a></p>`
+            div.innerHTML=`<p>${data.message}:<a href="https://link-shortener-production-1229.up.railway.app/${data.newLink}">${data.newLink}</a></p>`
             e.target[0].value=null
             e.target[1].value=null
         }else{
